@@ -78,6 +78,7 @@ O portfólio foi desenvolvido com foco em:
 ---
 
 ## Estrutura do projeto
+```bash
 /
 ├── index.html
 ├── style.css
