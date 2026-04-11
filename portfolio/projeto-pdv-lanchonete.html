@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto: Dashboard de Vendas | Seu Nome</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Estilos específicos para a página de detalhes */
+        .project-page-hero {
+            padding: 150px 0 80px;
+            background: var(--bg-color);
+        }
+        .project-category {
+            color: var(--accent-color);
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            font-weight: 700;
+            font-size: 0.9rem;
+        }
+        .project-main-title {
+            font-size: clamp(2.5rem, 6vw, 4rem);
+            margin: 1rem 0;
+            line-height: 1.1;
+        }
+        .project-meta {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+            padding: 2rem 0;
+            border-top: 1px solid var(--border-color);
+            border-bottom: 1px solid var(--border-color);
+        }
+        .meta-item h4 { font-size: 0.8rem; color: var(--text-secondary); text-transform: uppercase; }
+        .meta-item p { font-weight: 600; }
+
+        .project-content { padding: 80px 0; }
+        .content-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: start;
+        }
+        .project-description h2 { margin-bottom: 1.5rem; }
+        .project-description p { margin-bottom: 1.5rem; color: var(--text-secondary); font-size: 1.1rem; }
+        
+        .project-image-large {
+            width: 100%;
+            height: 500px;
+            background-color: #eee;
+            background-size: cover;
+            background-position: center;
+            margin: 40px 0;
+            box-shadow: var(--shadow);
+        }
+
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+            margin-top: 20px;
+        }
+        .gallery-item { height: 300px; background: #eee; }
+
+        .back-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            color: var(--text-primary);
+            text-decoration: none;
+            font-weight: 700;
+            margin-bottom: 2rem;
+            transition: var(--transition);
+        }
+        .back-btn:hover { transform: translateX(-5px); color: var(--accent-color); }
+
+        @media (max-width: 768px) {
+            .content-grid { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+    <div class="cursor"></div>
+    <div class="cursor-follower"></div>
+
+    <header>
+        <nav>
+            <div class="logo">PORTFÓLIO<span>.</span></div>
+            <a href="index.html" class="back-btn"><i class="fas fa-arrow-left"></i> Voltar</a>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero do Projeto -->
+        <section class="project-page-hero">
+            <div class="container">
+                <span class="project-category">Power BI & Data Science</span>
+                <h1 class="project-main-title">Dashboard de Vendas <br> Real-Time 2024</h1>
+                
+                <div class="project-meta">
+                    <div class="meta-item">
+                        <h4>Cliente</h4>
+                        <p>Empresa de Varejo X</p>
+                    </div>
+                    <div class="meta-item">
+                        <h4>Tecnologias</h4>
+                        <p>Power BI, SQL, Python</p>
+                    </div>
+                    <div class="meta-item">
+                        <h4>Duração</h4>
+                        <p>3 Meses</p>
+                    </div>
+                    <div class="meta-item">
+                        <h4>Link</h4>
+                        <p><a href="#" style="color: var(--accent-color);">Ver Ao Vivo</a></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Imagem Principal -->
+        <div class="container">
+            <!-- SUBSTITUA PELA IMAGEM DO SEU PROJETO -->
+            <div class="project-image-large" style="background-image: url('https://images.unsplash.com/photo-1551288049-bbda38a594a0?auto=format&fit=crop&q=80&w=2070')"></div>
+        </div>
+
+        <!-- Detalhes do Projeto -->
+        <section class="project-content">
+            <div class="container">
+                <div class="content-grid">
+                    <div class="project-description">
+                        <h2>O Desafio</h2>
+                        <p>O cliente possuía dados espalhados em diferentes planilhas e sistemas ERP, o que levava a uma demora de 5 dias para gerar um relatório de fechamento mensal.</p>
+                        <p>A necessidade era uma visão consolidada que permitisse decisões baseadas em dados em tempo real, focando em margem de lucro e performance por região.</p>
+                    </div>
+                    <div class="project-description">
+                        <h2>A Solução</h2>
+                        <p>Desenvolvi uma pipeline de dados utilizando SQL Server para centralização e Power BI para visualização. Implementei medidas em DAX complexas para cálculo de tendências (YoY) e Python para limpeza automatizada de dados inconsistentes.</p>
+                        <p>O design seguiu os princípios de UI/UX para dashboards, garantindo que os gestores encontrassem os KPIs principais em menos de 3 segundos.</p>
+                    </div>
+                </div>
+
+                <!-- Galeria de Imagens (opcional) -->
+                <div class="gallery-grid">
+                    <div class="gallery-item" style="background-image: url('https://via.placeholder.com/600x400'); background-size: cover;"></div>
+                    <div class="gallery-item" style="background-image: url('https://via.placeholder.com/600x400'); background-size: cover;"></div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Seu Nome. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
