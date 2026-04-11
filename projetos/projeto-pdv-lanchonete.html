@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto: PDV para lanchonete | Rodrigo Souza</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/svg+xml" href="./img/favicon.svg">
+    <style>
+        /* Estilos específicos para a página de projetos */
+        .project-page-hero {
+            padding: 150px 0 80px;
+            background: var(--bg-color);
+        }
+        .project-category {
+            color: var(--accent-color);
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            font-weight: 700;
+            font-size: 0.9rem;
+        }
+        .project-main-title {
+            font-size: clamp(2.5rem, 6vw, 4rem);
+            margin: 1rem 0;
+            line-height: 1.1;
+        }
+        .project-meta {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+            padding: 2rem 0;
+            border-top: 1px solid var(--border-color);
+            border-bottom: 1px solid var(--border-color);
+        }
+        .meta-item h4 { font-size: 0.8rem; color: var(--text-secondary); text-transform: uppercase; }
+        .meta-item p { font-weight: 600; }
+
+        .project-content { padding: 80px 0; }
+        .content-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: start;
+        }
+        .project-description h2 { margin-bottom: 1.5rem; }
+        .project-description p { margin-bottom: 1.5rem; color: var(--text-secondary); font-size: 1.1rem; }
+        
+        .project-image-large {
+            width: 100%;
+            height: 500px;
+            background-color: #eee;
+            background-size: cover;
+            background-position: center;
+            margin: 40px 0;
+            box-shadow: var(--shadow);
+        }
+
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+            margin-top: 20px;
+        }
+        .gallery-item { height: 300px; background: #eee; }
+
+        .back-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            color: white;
+            text-decoration: none;
+            font-weight: 700;
+            margin-bottom: 2rem;
+            transition: var(--transition);
+        }
+        .back-btn:hover { transform: translateX(-5px); color: var(--accent-color); }
+
+        @media (max-width: 768px) {
+            .content-grid { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+    <div class="cursor"></div>
+    <div class="cursor-follower"></div>
+
+    <header>
+        <nav>
+            <div class="logo">PORTFÓLIO<span>.</span></div>
+            <a href="index.html" class="back-btn"><i class="fas fa-arrow-left"></i> Voltar</a>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero do Projeto -->
+        <section class="project-page-hero">
+            <div class="container">
+                <span class="project-category">Web System & SQL</span>
+                <h1 class="project-main-title">PDV para Lanchonetes</h1>
+                
+                <div class="project-meta">
+                    <div class="meta-item">
+                        <h4>Público-alvo</h4>
+                        <p>Lanchonetes e pequenos comércios</p>
+                    </div>
+                    <div class="meta-item">
+                        <h4>Tecnologias</h4>
+                        <p>JavaScript, HTML, SQL</p>
+                    </div>
+                    <div class="meta-item">
+                        <h4>Link</h4>
+                        <p><a href="https://lanchonete-neon.vercel.app/" target="_blank" style="color: var(--accent-color);">Acessar página</a></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Imagem Principal -->
+        <div class="container">
+            <div class="project-image-large" style="background-image: url('./img/print1Lanchonete.png')"></div>
+        </div>
+
+        <!-- Detalhes do Projeto -->
+        <section class="project-content">
+            <div class="container">
+                <div class="content-grid">
+                    <div class="project-description">
+                        <h2>O Desafio</h2>
+                        <p>O controle de pedidos e comandas é essencial em qualquer negócio, especialmente em operações que exigem agilidade, como lanchonetes. </p>
+                        <p>Porém, a maioria dos sistemas disponíveis no mercado é complexo demais, com funcionalidades desnecessárias, uma curva de aprendizado alta e não conversa com seu público-alvo, que precisa de praticidade no dia a dia.</p>
+                    </div>
+                    <div class="project-description">
+                        <h2>A Solução</h2>
+                        <p>Este sistema segue um caminho diferente: prioriza a simplicidade e a eficiência. Ao invés de sobrecarregar o usuário com recursos, o foco está em uma experiência intuitiva e acessível para todos os níveis de usuários.</p>
+                        <p>Fora do papel, a solução já é utilizada por lanchonetes locais, contribuindo diretamente para a agilidade no atendimento, melhor controle de pedidos e organização da operação gerando <b> impacto real </b> no dia a dia do negócio.    </p>
+                    </div>
+                </div>
+
+                <!-- Galeria de Imagens -->
+                <div class="gallery-grid">
+                    <div class="gallery-item" style="background-image: url('./img/print2Lanchonete_historico.png'); background-size: cover;"></div>
+                    <div class="gallery-item" style="background-image: url('./img/print3lanchonete_relatorio.png'); background-size: cover;"></div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Desenvolvido por Rodrigo Souza.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
