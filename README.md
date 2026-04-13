@@ -1,87 +1,93 @@
-# Portfólio - Rodrigo Souza
+# Portfolio - Rodrigo Souza
 
-Este repositório contém o código do meu portfólio pessoal, onde apresento projetos desenvolvidos com foco em resolução de problemas reais, automação de processos e desenvolvimento de soluções eficientes.
+This repository contains the source code of my personal portfolio, where I showcase projects focused on solving real-world problems, process automation, and building efficient digital solutions.
 
- [**Acesse o portfólio:**](https://diggow12.github.io/Portfolio/) 
-
----
-
-## Sobre mim
-
-Sou analista de projetos com foco em otimização de processos, automação e desenvolvimento de soluções digitais.
-
-Minha abordagem é simples:
-
-> Identificar problemas reais e desenvolver soluções práticas que gerem valor e resolvam o problema.
-
-Tenho experiência com:
-- Automação de processos
-- Desenvolvimento Web
-- Análise de dados
-- Levantamento de requisitos
+[**Visit the portfolio:**](https://diggow12.github.io/Portfolio/)
 
 ---
 
-## Objetivo do portfólio
+## About Me
 
-Este portfólio foi criado para:
+I'm a Project Analyst focused on process optimization, automation, and digital solution development.
 
-- Apresentar projetos com impacto real
-- Demonstrar habilidades técnicas e analíticas
-- Mostrar minha forma de pensar e resolver problemas
-- Servir como vitrine profissional
+My approach is simple:
 
----
+> Identify real problems and build practical solutions that generate value.
 
-## Projetos em destaque
+I have experience with:
 
-### Sistema de Gestão para Lanchonetes
-Sistema web completo para controle de comandas, pedidos e faturamento.
-
-**Destaques:**
-- Controle em tempo real
-- Interface simples e intuitiva
-- Integração com banco de dados
+- Process automation
+- Web development
+- Data analysis
+- Requirements gathering
 
 ---
 
-### Automação de Coletas Logísticas
-Automação de processo crítico utilizando Power Automate, Forms e Excel.
+## Portfolio Goals
 
-**Destaques:**
-- Redução de falhas operacionais
-- Registro padronizado
-- Comunicação automatizada com transportadoras
-- Aplicado em centenas de coletas reais
+This portfolio was created to:
+
+- Showcase projects with real-world impact
+- Demonstrate technical and analytical skills
+- Show how I think and solve problems
+- Serve as a professional showcase
 
 ---
 
-## Tecnologias utilizadas
+## Featured Projects
 
-- HTML, CSS e JavaScript
-- Supabase (Auth e Database)
+### Food Stand Management System
+
+A complete web system for order, tab, and billing management.
+
+**Highlights:**
+- Real-time order control
+- Simple and intuitive interface
+- Database integration
+
+---
+
+### Logistics Collection Automation
+
+Automation of a critical logistics process using Power Automate, Forms and Excel.
+
+**Highlights:**
+- Reduction of operational failures
+- Standardized data recording
+- Automated communication with carriers
+- Applied to hundreds of real collections
+
+---
+
+## Technologies Used
+
+- HTML, CSS and JavaScript
+- Supabase (Auth & Database)
 - Power Automate
 - Microsoft Forms
 - Excel / Power BI
 
 ---
 
-## Design e experiência
+## Design & Experience
 
-O portfólio foi desenvolvido com foco em:
+The portfolio was built with focus on:
 
-- Interface moderna e limpa
-- Experiência fluida para o usuário
-- Animações leves para engajamento
-- Organização clara das informações
+- Modern and clean interface
+- Smooth user experience
+- Lightweight animations for engagement
+- Clear information structure
 
 ---
 
-## Estrutura do projeto
+## Project Structure
+
 ```bash
 /
 ├── index.html
 ├── style.css
 ├── script.js
+├── lang.js
 ├── /img
 └── /projetos
+```
