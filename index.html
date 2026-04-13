@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rodrigo Souza | Project Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/svg+xml" href="./img/favicon.svg">
+    <style>
+        #lang-toggle {
+            background: transparent;
+            border: 1.5px solid var(--accent-color);
+            color: var(--accent-color);
+            border-radius: 6px;
+            padding: 4px 12px;
+            font-size: 0.8rem;
+            font-weight: 700;
+            cursor: pointer;
+            letter-spacing: 1px;
+            transition: background 0.2s, color 0.2s;
+            font-family: 'Inter', sans-serif;
+        }
+        #lang-toggle:hover { background: var(--accent-color); color: #fff; }
+    </style>
+</head>
+<body>
+    <div class="cursor"></div>
+    <div class="cursor-follower"></div>
+    <canvas id="bg-canvas"></canvas>
+
+    <header>
+        <nav>
+            <div class="logo">PORTFOLIO<span>.</span></div>
+            <ul class="nav-links">
+                <li><a href="#home" data-pt="Home" data-en="Home">Home</a></li>
+                <li><a href="#about" data-pt="Sobre" data-en="About">About</a></li>
+                <li><a href="#projects" data-pt="Projetos" data-en="Projects">Projects</a></li>
+                <li><a href="#contact" data-pt="Contato" data-en="Contact">Contact</a></li>
+            </ul>
+            <button id="lang-toggle" data-current="en">PT</button>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <h2 class="reveal-text" data-pt="Olá, eu sou" data-en="Hi, I'm">Hi, I'm</h2>
+                <h1 class="reveal-text">Rodrigo Souza</h1>
+                <h3 class="reveal-text">Data &amp; Process Analyst | <span>Web Developer</span></h3>
+                <p class="reveal-text" data-pt="Apaixonado por desafios, meu trabalho é mapear problemas e desenvolver soluções." data-en="Passionate about challenges — I map problems and build solutions that generate real value.">Passionate about challenges — I map problems and build solutions that generate real value.</p>
+                <div class="hero-btns reveal-text" style="margin-top: 30px">
+                    <a href="#projects" class="btn btn-primary" data-pt="Ver projetos" data-en="View Projects">View Projects</a>
+                    <a href="#contact" class="btn btn-outline" data-pt="Contato" data-en="Contact">Contact</a>
+                </div>
+            </div>
+            <div class="scroll-indicator"><div class="mouse"></div></div>
+        </section>
+
+        <section id="about" class="about">
+            <div class="container">
+                <div class="section-title">
+                    <h2 data-pt="Sobre Mim" data-en="About Me">About Me</h2>
+                    <div class="line"></div>
+                </div>
+                <div class="about-grid">
+                    <div class="about-text">
+                        <p data-pt="Sou especialista em otimização de fluxos de trabalho e análise de processos. Utilizando de diversas ferramentas, desde desenvolvimento Web á Power Platform, minha missão é uma: gerar valor real." data-en="I specialize in workflow optimization and process analysis. Using a wide range of tools — from Web Development to Power Platform — my mission is simple: generate real value.">I specialize in workflow optimization and process analysis. Using a wide range of tools — from Web Development to Power Platform — my mission is simple: generate real value.</p>
+                        <p data-pt="Crio ferramentas que não apenas resolvem problemas, mas antecipam necessidades do negócio." data-en="I build tools that don't just solve problems — they anticipate business needs.">I build tools that don't just solve problems — they anticipate business needs.</p>
+                    </div>
+                    <div class="about-stats">
+                        <div class="stat-card">
+                            <h3>20+</h3>
+                            <p data-pt="Projetos Entregues" data-en="Projects Delivered">Projects Delivered</p>
+                        </div>
+                        <div class="stat-card">
+                            <h3>2+</h3>
+                            <p data-pt="Anos de Experiência" data-en="Years of Experience">Years of Experience</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="projects">
+            <div class="container">
+                <div class="section-title">
+                    <h2 data-pt="Projetos em Destaque" data-en="Featured Projects">Featured Projects</h2>
+                    <p data-pt="Soluções reais desenvolvidas com foco em UX e eficiência." data-en="Real-world solutions built with a focus on UX and efficiency.">Real-world solutions built with a focus on UX and efficiency.</p>
+                </div>
+                <div class="projects-grid">
+                    <div class="project-card">
+                        <div class="project-img" style="background-image: url('./img/print4Lanchonete_comanda.png'); padding-top: 16px;"></div>
+                        <div class="project-info">
+                            <span class="tag">JavaScript &amp; SQL</span>
+                            <h3 data-pt="PDV para Lanchonete" data-en="Food Stand POS System">Food Stand POS System</h3>
+                            <p data-pt="Sistema web de gestão de comandas para lanchonetes, com autenticação, controle de pedidos, catálogo de produtos e relatórios financeiros. Desenvolvido com foco no usuário, o projeto já ajuda diversas lanchonetes locais a profissionalizarem seu processo." data-en="Web-based order management system for food stands — featuring authentication, order tracking, product catalog and financial reports. Built with a user-first approach, it's already helping local businesses professionalize their operations.">Web-based order management system for food stands — featuring authentication, order tracking, product catalog and financial reports. Built with a user-first approach, it's already helping local businesses professionalize their operations.</p>
+                            <div class="project-links">
+                                <a href="./projetos/projeto-pdv-lanchonete.html" class="view-project" data-pt="Ver Detalhes &lt;i class='fas fa-external-link-alt'&gt;&lt;/i&gt;" data-en="View Details &lt;i class='fas fa-external-link-alt'&gt;&lt;/i&gt;">View Details <i class="fas fa-external-link-alt"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <div class="project-img" style="background-image: url('./img/logisticaformulario.jpg')"></div>
+                        <div class="project-info">
+                            <span class="tag">Power Automate &amp; Excel</span>
+                            <h3 data-pt="Automação em processo de coleta" data-en="Logistics Collection Automation">Logistics Collection Automation</h3>
+                            <p data-pt="Solução com Power Automate, Forms e Excel para gestão de coletas logísticas, com atualização automática e rastreabilidade completa. Já contribuiu para o fluxo correto de centenas de coletas." data-en="Solution using Power Automate, Forms and Excel for logistics collection management — with automatic updates and full traceability. Already processed hundreds of collections successfully.">Solution using Power Automate, Forms and Excel for logistics collection management — with automatic updates and full traceability. Already processed hundreds of collections successfully.</p>
+                            <div class="project-links">
+                                <a href="./projetos/projeto-logistica.html" class="view-project" data-pt="Ver Detalhes &lt;i class='fas fa-external-link-alt'&gt;&lt;/i&gt;" data-en="View Details &lt;i class='fas fa-external-link-alt'&gt;&lt;/i&gt;">View Details <i class="fas fa-external-link-alt"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills" class="skills">
+            <div class="container">
+                <div class="section-title">
+                    <h2 data-pt="Habilidades Técnicas" data-en="Technical Skills">Technical Skills</h2>
+                </div>
+                <div class="skills-list">
+                    <div class="skill-item">Power BI</div>
+                    <div class="skill-item">Power Apps</div>
+                    <div class="skill-item">JavaScript</div>
+                    <div class="skill-item">SQL</div>
+                    <div class="skill-item">Power Automate</div>
+                    <div class="skill-item">SQL Server</div>
+                    <div class="skill-item" data-pt="Python (Data Science)" data-en="Python (Data Science)">Python (Data Science)</div>
+                    <div class="skill-item" data-pt="Gestão de Projetos" data-en="Project Management">Project Management</div>
+                    <div class="skill-item">UI/UX Design</div>
+                    <div class="skill-item">DAX / Power Query</div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact">
+            <div class="container">
+                <div class="contact-box">
+                    <h2 data-pt="Vamos trabalhar juntos?" data-en="Let's work together?">Let's work together?</h2>
+                    <p data-pt="Estou sempre aberto a novos desafios e oportunidades." data-en="I'm always open to new challenges and opportunities.">I'm always open to new challenges and opportunities.</p>
+                    <div class="contact-cards-grid">
+                        <a href="https://www.linkedin.com/in/rodrigo-souza-9b1078233" target="_blank" class="contact-card">
+                            <div class="contact-card-icon icon-linkedin">
+                                <svg width="22" height="22" viewBox="0 0 24 24" fill="#185FA5"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+                            </div>
+                            <span class="contact-card-label">LinkedIn</span>
+                            <span class="contact-card-handle">Rodrigo Souza</span>
+                            <span class="contact-card-arrow"><i class="fas fa-external-link-alt"></i></span>
+                        </a>
+                        <a href="mailto:souza.rodrigo1205@gmail.com" class="contact-card">
+                            <div class="contact-card-icon icon-gmail">
+                                <svg width="22" height="22" viewBox="0 0 24 24" fill="#A32D2D"><path d="M24 5.457v13.909c0 .904-.732 1.636-1.636 1.636h-3.819V11.73L12 16.64l-6.545-4.91v9.273H1.636A1.636 1.636 0 0 1 0 19.366V5.457c0-2.023 2.309-3.178 3.927-1.964L5.455 4.64 12 9.548l6.545-4.91 1.528-1.145C21.69 2.28 24 3.434 24 5.457z"/></svg>
+                            </div>
+                            <span class="contact-card-label">E-mail</span>
+                            <span class="contact-card-handle">souza.rodrigo1205@gmail.com</span>
+                            <span class="contact-card-arrow"><i class="fas fa-external-link-alt"></i></span>
+                        </a>
+                        <a href="https://github.com/Diggow12" target="_blank" class="contact-card">
+                            <div class="contact-card-icon icon-github">
+                                <svg width="22" height="22" viewBox="0 0 24 24" fill="#444441"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+                            </div>
+                            <span class="contact-card-label">GitHub</span>
+                            <span class="contact-card-handle">Diggow12</span>
+                            <span class="contact-card-arrow"><i class="fas fa-external-link-alt"></i></span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p data-pt="&copy; 2026 Desenvolvido por Rodrigo Souza." data-en="&copy; 2026 Developed by Rodrigo Souza.">&copy; 2026 Developed by Rodrigo Souza.</p>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="script.js"></script>
+    <script src="lang.js"></script>
+</body>
+</html>

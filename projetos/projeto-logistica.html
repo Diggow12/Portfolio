@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project: Collection Control | Rodrigo Souza</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="icon" type="image/svg+xml" href="../img/favicon.svg">
+    <style>
+        #lang-toggle {
+            background: transparent;
+            border: 1.5px solid var(--accent-color);
+            color: var(--accent-color);
+            border-radius: 6px;
+            padding: 4px 12px;
+            font-size: 0.8rem;
+            font-weight: 700;
+            cursor: pointer;
+            letter-spacing: 1px;
+            transition: background 0.2s, color 0.2s;
+            font-family: 'Inter', sans-serif;
+        }
+        #lang-toggle:hover { background: var(--accent-color); color: #fff; }
+        .project-page-hero { padding: 150px 0 80px; background: var(--bg-color); }
+        .project-category { color: var(--accent-color); text-transform: uppercase; letter-spacing: 2px; font-weight: 700; font-size: 0.9rem; }
+        .project-main-title { font-size: clamp(2.5rem, 6vw, 4rem); margin: 1rem 0; line-height: 1.1; }
+        .project-meta { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 2rem; margin-top: 3rem; padding: 2rem 0; border-top: 1px solid var(--border-color); border-bottom: 1px solid var(--border-color); }
+        .meta-item h4 { font-size: 0.8rem; color: var(--text-secondary); text-transform: uppercase; }
+        .meta-item p { font-weight: 600; }
+        .project-content { padding: 80px 0; }
+        .content-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: start; }
+        .project-description h2 { margin-bottom: 1.5rem; }
+        .project-description p { margin-bottom: 1.5rem; color: var(--text-secondary); font-size: 1.1rem; }
+        .project-image-large { width: 100%; height: 500px; background-color: #eee; background-size: cover; background-position: center; margin: 40px 0; box-shadow: var(--shadow); }
+        .gallery-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin-top: 20px; }
+        .gallery-item { height: 300px; background: #eee; }
+        .back-btn { display: inline-flex; align-items: center; gap: 10px; color: white; text-decoration: none; font-weight: 700; margin-bottom: 2rem; transition: var(--transition); }
+        .back-btn:hover { transform: translateX(-5px); color: var(--accent-color); }
+        @media (max-width: 768px) { .content-grid { grid-template-columns: 1fr; } }
+    </style>
+</head>
+<body>
+    <div class="cursor"></div>
+    <div class="cursor-follower"></div>
+
+    <header>
+        <nav>
+            <div class="logo">PORTFOLIO<span>.</span></div>
+            <a href="../index.html" class="back-btn" data-pt="&lt;i class='fas fa-arrow-left'&gt;&lt;/i&gt; Voltar" data-en="&lt;i class='fas fa-arrow-left'&gt;&lt;/i&gt; Back"><i class="fas fa-arrow-left"></i> Back</a>
+            <button id="lang-toggle" data-current="en">PT</button>
+        </nav>
+    </header>
+
+    <main>
+        <section class="project-page-hero">
+            <div class="container">
+                <span class="project-category">Power Automate &amp; Excel</span>
+                <h1 class="project-main-title" data-pt="Controle automático de Coletas" data-en="Automated Logistics Collection Control">Automated Logistics Collection Control</h1>
+                <div class="project-meta">
+                    <div class="meta-item">
+                        <h4 data-pt="Setor" data-en="Industry">Industry</h4>
+                        <p data-pt="Logística e coleta" data-en="Logistics &amp; Collection">Logistics &amp; Collection</p>
+                    </div>
+                    <div class="meta-item">
+                        <h4 data-pt="Tecnologias" data-en="Technologies">Technologies</h4>
+                        <p>Power Automate, Excel, Forms</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="container">
+            <div class="project-image-large" style="background-image: url('../img/emailLogistica.png');"></div>
+        </div>
+
+        <section class="project-content">
+            <div class="container">
+                <div class="content-grid">
+                    <div class="project-description">
+                        <h2 data-pt="O Desafio" data-en="The Challenge">The Challenge</h2>
+                        <p data-pt="Antigamente, a logística dependia de métodos manuais: agendávamos as coletas por email ou Whatsapp com as transportadoras e usávamos planilhas para acompanhar tudo. Isso causava muitos problemas, como informações erradas e erros nas operações, já que os cancelamentos e mudanças não eram registrados corretamente." data-en="Logistics previously relied on manual methods: pickups were scheduled via email or WhatsApp with carriers, and spreadsheets were used to track everything. This caused numerous problems — incorrect information and operational errors — as cancellations and changes were not properly recorded.">Logistics previously relied on manual methods: pickups were scheduled via email or WhatsApp with carriers, and spreadsheets were used to track everything. This caused numerous problems — incorrect information and operational errors — as cancellations and changes were not properly recorded.</p>
+                        <p data-pt="Diante disso, o desencontro de informações era constante, a operação se organizava esperando por uma coleta que nem iria acontecer, desperdiçando tempo e recursos. O que não podia acontecer naquele momento de alta demanda." data-en="As a result, information mismatches were constant — the operation would prepare for a pickup that was never going to happen, wasting time and resources. This was unacceptable during a high-demand period.">As a result, information mismatches were constant — the operation would prepare for a pickup that was never going to happen, wasting time and resources. This was unacceptable during a high-demand period.</p>
+                    </div>
+                    <div class="project-description">
+                        <h2 data-pt="A Solução" data-en="The Solution">The Solution</h2>
+                        <p data-pt="Pensando nisso, a solução tinha que ser fácil, implementada o mais rápido possível e funcionar muito bem. A ferramenta automática que criamos fez exatamente isso, dando segurança e seguindo um padrão em todo o processo, entregue em tempo recorde." data-en="The solution needed to be easy to use, deployed as quickly as possible, and work flawlessly. The automated tool we built did exactly that — providing reliability and standardizing the entire process, delivered in record time.">The solution needed to be easy to use, deployed as quickly as possible, and work flawlessly. The automated tool we built did exactly that — providing reliability and standardizing the entire process, delivered in record time.</p>
+                        <p data-pt="A solução já garantiu o processo de centenas de coletas, e reduziu o desencontro de informações em 60%. O motivo da ferramenta ter obtido tanto sucesso é justamente o fato de ser uma solução simples para um problema complexo." data-en="The solution has already secured the process for hundreds of collections and reduced information mismatches by 60%. Its success stems from being a simple solution to a complex problem.">The solution has already secured the process for hundreds of collections and reduced information mismatches by 60%. Its success stems from being a simple solution to a complex problem.</p>
+                    </div>
+                </div>
+                <div class="gallery-grid">
+                    <div class="gallery-item" style="background-image: url('../img/automateLogistica.png'); background-size: cover;"></div>
+                    <div class="gallery-item" style="background-image: url('../img/controleColetas.png'); background-size: cover;"></div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p data-pt="&copy; 2026 Desenvolvido por Rodrigo Souza." data-en="&copy; 2026 Developed by Rodrigo Souza.">&copy; 2026 Developed by Rodrigo Souza.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="../script.js"></script>
+    <script src="../lang.js"></script>
+</body>
+</html>
