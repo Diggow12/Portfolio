@@ -1,9 +1,0 @@
-<svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
-  <rect width="32" height="32" fill="#0a0a0a"/>
-  <text x="16" y="22" text-anchor="middle"
-        font-family="Inter, sans-serif"
-        font-weight="900" font-size="16"
-        fill="white" letter-spacing="-0.5">RS</text>
-  <line x1="6" y1="26" x2="26" y2="26"
-        stroke="#7F77DD" stroke-width="2" stroke-linecap="round"/>
-</svg>
